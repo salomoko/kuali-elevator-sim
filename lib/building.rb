@@ -2,11 +2,8 @@
 class Building
   attr_accessor :elevators, :floors
 
-  def elevators
-    @elevators || 1
-  end
-
-  def floors
-    @floors || 1
+  def initialize(num_elevators = 1, num_floors = 10)
+    @elevators = num_elevators
+    @num_floors = num_floors
   end
 end
